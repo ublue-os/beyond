@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Bluefin First Boot Setup
-Comment=Sets up Ublue Desktop Correctly On FirstBoot
+Name=Beyond First Boot Setup
+Comment=Set up Beyond's apps
 Exec=/usr/bin/yafti /etc/yafti.yml
 Icon=org.gnome.Terminal
 Type=Application
