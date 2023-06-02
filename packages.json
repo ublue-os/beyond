@@ -10,6 +10,7 @@
         "exclude": {
             "all": [
                 "gnome-terminal",
+                "gnome-terminal-nautilus",
                 "firefox",
                 "firefox-langpacks"
             ]
