@@ -8,7 +8,7 @@ screens:
       title: "Welcome to Beyond (Alpha)"
       icon: "/path/to/icon"
       description: |
-        Pick some applications to get started
+        Pick some apps to get started
   can-we-modify-your-flatpaks:
     source: yafti.screen.consent
     values:
@@ -31,7 +31,7 @@ screens:
       package_manager: yafti.plugin.flatpak
       groups:
         Core:
-          description: Core Apps
+          description: GNOME Apps
           default: true
           packages:
           - Calculator:
@@ -50,16 +50,8 @@ screens:
               package: org.gnome.clocks
               system: true
               user: false
-          - Connections:
-              package: org.gnome.Connections
-              system: true
-              user: false
           - Contacts:
               package: org.gnome.Contacts
-              system: true
-              user: false
-          - Disk Usage Analyzer:
-              package: org.gnome.baobab
               system: true
               user: false
           - Document Viewer:
@@ -72,10 +64,6 @@ screens:
               user: false
           - Snapshot:
               package: org.gnome.Snapshot
-              system: true
-              user: false
-          - Logs:
-              package: org.gnome.Logs
               system: true
               user: false
           - Maps:
@@ -98,6 +86,22 @@ screens:
               package: org.gnome.Epiphany
               system: true
               user: false
+        Utilities:
+          description: Potentially useful apps for advanced users
+          default: false
+          packages:
+          - Connections:
+              package: org.gnome.Connections
+              system: false
+              user: true
+          - Disk Usage Analyzer:
+              package: org.gnome.baobab
+              system: false
+              user: true
+          - Logs:
+              package: org.gnome.Logs
+              system: false
+              user: true
   final-screen:
     source: yafti.screen.title
     values:
