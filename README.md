@@ -10,3 +10,10 @@ Beyond is an opinionated look at what an ideal GNOME-based OS would look like, f
 - **GNOME design experiments** like experimental Activities button behavior, font changes, and more to come
 
 [![release-please](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml/badge.svg)](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml)
+
+## Verification
+
+These images are signed with sigstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
+
+    cosign verify --key cosign.pub ghcr.io/ublue-os/beyond
+    
