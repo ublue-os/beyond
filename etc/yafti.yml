@@ -5,14 +5,14 @@ screens:
   first-screen:
     source: yafti.screen.title
     values:
-      title: "Welcome to Bluefin (Alpha)"
+      title: "Welcome to Beyond (Alpha)"
       icon: "/path/to/icon"
       description: |
         Pick some applications to get started
   can-we-modify-your-flatpaks:
     source: yafti.screen.consent
     values:
-      title: Welcome, Traveler
+      title: Install Apps
       condition:
         run: flatpak remotes --system | grep fedora
       description: |
@@ -31,40 +31,71 @@ screens:
       package_manager: yafti.plugin.flatpak
       groups:
         Core:
-          description: Core Applications
+          description: Core Apps
           default: true
           packages:
-          - Backup: org.gnome.DejaDup
-          - Calculator: org.gnome.Calculator
-          - Calendar: org.gnome.Calendar
-          - Characters: org.gnome.Characters
-          - Connections: org.gnome.Connections
-          - Contacts: org.gnome.Contacts
-          - Document Viewer: org.gnome.Evince
-          - Extensions Manager: com.mattjakeman.ExtensionManager
-          - Fedora Media Writer: org.fedoraproject.MediaWriter
-          - Flatseal Permissions Manager: com.github.tchx84.Flatseal
-          - Logs: org.gnome.Logs
-          - Maps: org.gnome.Maps
-          - Nautilus Preview: org.gnome.NautilusPreviewer
-          - Text Editor: org.gnome.TextEditor
-          - Weather: org.gnome.Weather
-          - Disk Usage Analyzer: org.gnome.baobab
-          - Clocks: org.gnome.clocks
-        Beyond:
-          description: System Packages for Beyond
-          default: true
-          packages:
-          - Web: 
-              package: org.gnome.Epiphany
+          - Calculator:
+              package: org.gnome.Calculator
+              system: true
+              user: false
+          - Calendar:
+              package: org.gnome.Calendar
+              system: true
+              user: false
+          - Characters:
+              package: org.gnome.Characters
+              system: true
+              user: false
+          - Clocks:
+              package: org.gnome.clocks
+              system: true
+              user: false
+          - Connections:
+              package: org.gnome.Connections
+              system: true
+              user: false
+          - Contacts:
+              package: org.gnome.Contacts
+              system: true
+              user: false
+          - Disk Usage Analyzer:
+              package: org.gnome.baobab
+              system: true
+              user: false
+          - Document Viewer:
+              package: org.gnome.Evince
               system: true
               user: false
           - Loupe:
               package: org.gnome.Loupe
               system: true
               user: false
-          - Snapshot: 
+          - Snapshot:
               package: org.gnome.Snapshot
+              system: true
+              user: false
+          - Logs:
+              package: org.gnome.Logs
+              system: true
+              user: false
+          - Maps:
+              package: org.gnome.Maps
+              system: true
+              user: false
+          - Nautilus Preview:
+              package: org.gnome.NautilusPreviewer
+              system: true
+              user: false
+          - Text Editor:
+              package: org.gnome.TextEditor
+              system: true
+              user: false
+          - Weather:
+              package: org.gnome.Weather
+              system: true
+              user: false
+          - Web:
+              package: org.gnome.Epiphany
               system: true
               user: false
   final-screen:
@@ -80,4 +111,4 @@ screens:
         - "Join the Discord Community":
             run: /usr/bin/xdg-open https://discord.gg/XjG48C7VHx 
       description: |
-        Thanks for trying Bluefin, we hope you enjoy it!
+        Thanks for trying Beyond, we hope you enjoy it!
