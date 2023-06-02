@@ -2,39 +2,14 @@
     "all": {
         "include": {
             "all": [
-                "gnome-shell-extension-appindicator",
-                "gnome-shell-extension-dash-to-dock",
-                "gnome-shell-extension-blur-my-shell",
-                "gnome-shell-extension-gsconnect",
-                "nautilus-gsconnect",
-                "libgda",
-                "libgda-sqlite",
-                "libratbag-ratbagd",
-                "python3-pip",
-                "tailscale",
-		"tmux",
-                "wireguard-tools",
-                "xprop",
-                "yaru-theme",
-		"zsh"
+                "gnome-shell-extension-dash-to-dock"
             ]
         },
         "exclude": {
             "all": [
                 "firefox",
-                "firefox-langpacks",
-                "gnome-tour"
+                "firefox-langpacks"
             ]
-        }
-    },
-    "37": {
-        "include": {
-            "all": [
-	        "podman-docker"
-	    ]
-        },
-        "exclude": {
-            "all": []
         }
     },
     "38": {
@@ -42,9 +17,7 @@
             "all": []
         },
         "exclude": {
-            "all": [
-	        "podman-docker"
-	    ]
+            "all": []
         }
     }
 }
