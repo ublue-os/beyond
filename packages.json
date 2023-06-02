@@ -2,7 +2,8 @@
     "all": {
         "include": {
             "all": [
-                "gnome-shell-extension-dash-to-dock"
+                "gnome-shell-extension-dash-to-dock",
+                "python3-pip"
             ]
         },
         "exclude": {
