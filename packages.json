@@ -2,12 +2,15 @@
     "all": {
         "include": {
             "all": [
+                "gnome-console",
                 "gnome-shell-extension-dash-to-dock",
                 "python3-pip"
             ]
         },
         "exclude": {
             "all": [
+                "gnome-terminal",
+                "gnome-terminal-nautilus",
                 "firefox",
                 "firefox-langpacks"
             ]
