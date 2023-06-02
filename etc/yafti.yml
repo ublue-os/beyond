@@ -100,8 +100,8 @@ screens:
               user: true
           - Logs:
               package: org.gnome.Logs
-              system: true
-              user: false
+              system: false
+              user: true
   final-screen:
     source: yafti.screen.title
     values:
