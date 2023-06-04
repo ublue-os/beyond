@@ -24,10 +24,18 @@ switch-windows-backward = ['<Shift><Alt>Tab']
 tap-to-click=true
 
 [org/gnome/shell/extensions/dash-to-dock]
-dock-fixed=true
-force-straight-corner=false
-custom-theme-shrink=true
-disable-overview-on-startup=true
+animation-time=0.15
+background-color='rgb(40,40,40)'
+background-opacity=0.8
+click-action='focus-minimize-or-previews'
+custom-background-color=true
+dash-max-icon-size=64
+dock-fixed=false
+hide-delay=0.5
+intellihide-mode='ALL_WINDOWS'
+show-icons-notifications-counter=false
+show-mounts=false
+show-trash=false
 transparency-mode='DYNAMIC'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
