@@ -1,26 +1,14 @@
 [org/gnome/shell] 
-favorite-apps = ['org.mozilla.firefox.desktop', 'org.mozilla.Thunderbird.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Rhythmbox3.desktop', 'org.libreoffice.LibreOffice.writer.desktop', 'org.gnome.Software.desktop', 'yelp.desktop']
-enabled-extensions = ['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-dock@micxgx.gmail.com', 'blur-my-shell@aunetx', 'gsconnect@andyholmes.github.io']
+enabled-extensions = ['dash-to-dock@micxgx.gmail.com']
 
 [org/gnome/desktop/interface]
-font-antialiasing="rgba"
 font-name="Inter 11"
 document-font-name="Inter 11"
-
-[org/gnome/desktop/sound]
-allow-volume-above-100-percent=true
-theme-name="Yaru"
 
 [org/gnome/desktop/wm/preferences]
 button-layout=":minimize,maximize,close"
 num-workspaces='4'
 title-bar-font="Inter 11"
-
-[org/gnome/desktop/wm/keybindings]
-switch-applications = ['<Super>Tab']
-switch-applications-backward = ['<Shift><Super>Tab']
-switch-windows = ['<Alt>Tab']
-switch-windows-backward = ['<Shift><Alt>Tab']
 
 [org/gnome/desktop/peripherals/touchpad]
 tap-to-click=true
@@ -31,12 +19,3 @@ force-straight-corner=false
 custom-theme-shrink=true
 disable-overview-on-startup=true
 transparency-mode='DYNAMIC'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding='<Control><Alt>t'
-command='gnome-terminal'
-name='gnome-terminal'
-
-[org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
-home=['<Super>e']
