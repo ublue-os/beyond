@@ -12,8 +12,6 @@ allow-volume-above-100-percent=true
 theme-name="Yaru"
 
 [org/gnome/desktop/wm/preferences]
-button-layout=":minimize,maximize,close"
-num-workspaces='4'
 title-bar-font="Inter 11"
 
 [org/gnome/desktop/wm/keybindings]
