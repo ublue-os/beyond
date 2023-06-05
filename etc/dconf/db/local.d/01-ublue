@@ -1,5 +1,5 @@
 [org/gnome/shell] 
-favorite-apps = ['org.gnome.Nautilus.desktop', 'org.gnome.Epiphany']
+favorite-apps = ['org.gnome.Nautilus.desktop', 'org.gnome.Epiphany', 'org.gnome.Settings.desktop', 'org.gnome.Software.desktop']
 enabled-extensions = ['dash-to-dock@micxgx.gmail.com']
 
 [org/gnome/desktop/interface]
