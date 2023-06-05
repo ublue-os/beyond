@@ -2,6 +2,10 @@
 favorite-apps = ['org.gnome.Nautilus.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Software.desktop']
 enabled-extensions = ['dash-to-dock@micxgx.gmail.com']
 
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/gnome/adwaita-l.webp'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/adwaita-d.webp'
+
 [org/gnome/desktop/interface]
 font-name="Inter 11"
 document-font-name="Inter 11"
