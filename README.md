@@ -1,8 +1,10 @@
 # beyond
 
+[![release-please](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml/badge.svg)](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml)
+
 **What a GNOME OS could look like in the future—today**
 
-[![release-please](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml/badge.svg)](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml)
+![Screenshot of Beyond](https://github.com/ublue-os/beyond/assets/611168/29e0b02c-a9ae-40eb-8790-b124d4749c57)
 
 Beyond is an opinionated look at what an ideal GNOME-based OS would look like, from the perspective of [Cassidy James Blaede](https://cassidyjames.com). Initial goals:
 
