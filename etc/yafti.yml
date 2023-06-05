@@ -98,6 +98,10 @@ screens:
               package: org.gnome.baobab
               system: false
               user: true
+          - Extension Manager:
+              package: com.mattjakeman.ExtensionManager
+              system: false
+              user: true
           - Logs:
               package: org.gnome.Logs
               system: false
