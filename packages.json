@@ -11,8 +11,10 @@
             "all": [
                 "gnome-terminal",
                 "gnome-terminal-nautilus",
+                "htop",
                 "firefox",
-                "firefox-langpacks"
+                "firefox-langpacks",
+                "nvtop"
             ]
         }
     },
