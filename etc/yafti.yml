@@ -1,4 +1,4 @@
-title: Welcome to uBlue
+title: Welcome to Beyond
 properties:
   mode: "run-on-change"
 screens:
@@ -6,7 +6,7 @@ screens:
     source: yafti.screen.title
     values:
       title: "Welcome to Beyond (Alpha)"
-      icon: "/path/to/icon"
+      icon: "/usr/share/icons/hicolor/scalable/apps/org.gnome.Settings.svg"
       description: |
         Pick some apps to get started
   can-we-modify-your-flatpaks:
@@ -22,11 +22,13 @@ screens:
         - run: /usr/bin/fedora-third-party disable
         - run: flatpak remote-delete fedora --force
         - run: flatpak remove --system --noninteractive --all
+        - run: flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+        - run: flatpak remote-modify --system flathub --no-filter --title="Flathub (System)"
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
   applications:
     source: yafti.screen.package
     values:
-      title: Application Installation
+      title: Install Apps
       show_terminal: true
       package_manager: yafti.plugin.flatpak
       groups:
@@ -58,24 +60,36 @@ screens:
               package: org.gnome.Evince
               system: true
               user: false
-          - Loupe:
-              package: org.gnome.Loupe
+          - Fonts:
+              package: org.gnome.font-viewer
               system: true
               user: false
-          - Snapshot:
-              package: org.gnome.Snapshot
+          - Loupe:
+              package: org.gnome.Loupe
               system: true
               user: false
           - Maps:
               package: org.gnome.Maps
               system: true
               user: false
+          - Music:
+              package: org.gnome.Music
+              system: true
+              user: false
           - Nautilus Preview:
               package: org.gnome.NautilusPreviewer
               system: true
               user: false
+          - Snapshot:
+              package: org.gnome.Snapshot
+              system: true
+              user: false
           - Text Editor:
               package: org.gnome.TextEditor
+              system: true
+              user: false
+          - Videos:
+              package: org.gnome.Totem
               system: true
               user: false
           - Weather:
@@ -102,6 +116,10 @@ screens:
               package: com.mattjakeman.ExtensionManager
               system: false
               user: true
+          - Flatseal:
+              package: com.github.tchx84.Flatseal
+              system: false
+              user: true
           - Logs:
               package: org.gnome.Logs
               system: false
@@ -112,7 +130,7 @@ screens:
       title: "All done!"
       icon: "/path/to/icon"
       links:
-        - "Install More Applications": 
+        - "Install More Apps": 
             run: /usr/bin/gnome-software
         - "Website":
             run: /usr/bin/xdg-open https://ublue.it
