@@ -17,6 +17,10 @@ ADD build.sh /tmp/build.sh
 
 RUN /tmp/build.sh && \
     pip install --prefix=/usr yafti && \
+    curl -sL $(curl -s https://api.github.com/repos/rsms/inter/releases | jq -r '.[0].assets[0].browser_download_url') -o /tmp/inter.zip && \
+    mkdir -p /tmp/inter /usr/share/fonts/inter && \
+    unzip /tmp/inter.zip -d /tmp/inter/ && \
+    mv /tmp/inter/*.ttf /tmp/inter/*.ttc /tmp/inter/LICENSE.txt /usr/share/fonts/inter/ && \
     systemctl unmask dconf-update.service && \
     systemctl enable dconf-update.service && \
     systemctl enable rpm-ostree-countme.service && \
