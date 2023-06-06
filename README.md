@@ -4,7 +4,9 @@
 
 **What a GNOME OS could look like in the future—today**
 
-![Screenshot of Beyond](https://github.com/ublue-os/beyond/assets/611168/29e0b02c-a9ae-40eb-8790-b124d4749c57)
+![Screenshot of Beyond overview](https://github.com/ublue-os/beyond/assets/611168/93a07df1-ac0a-4dff-b66b-9bebf58716ab) | ![Screenshot of Beyond desktop](https://github.com/ublue-os/beyond/assets/611168/f6ffac8a-6100-4ccc-8795-5b3b770ae6bd)
+---|---
+
 
 Beyond is an opinionated look at what an ideal GNOME-based OS would look like, from the perspective of [Cassidy James Blaede](https://cassidyjames.com).
 
