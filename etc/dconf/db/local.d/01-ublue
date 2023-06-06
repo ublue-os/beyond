@@ -36,3 +36,6 @@ show-icons-notifications-counter=false
 show-mounts=false
 show-trash=false
 transparency-mode='DYNAMIC'
+
+[org/gtk/gtk4/settings/file-chooser]
+sort-directories-first=true
