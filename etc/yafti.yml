@@ -104,6 +104,10 @@ screens:
           description: Potentially useful apps for advanced users
           default: false
           packages:
+          - Boxes:
+              package: org.gnome.Boxes
+              system: false
+              user: true
           - Connections:
               package: org.gnome.Connections
               system: false
