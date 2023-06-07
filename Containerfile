@@ -16,6 +16,8 @@ ADD packages.json /tmp/packages.json
 ADD build.sh /tmp/build.sh
 
 RUN /tmp/build.sh && \
+    wget https://copr.fedorainfracloud.org/coprs/ublue-os/gnome-software/repo/fedora-${FEDORA_VERSION}/ublue-os-gnome-software-fedora-${FEDORA_VERSION}.repo -O /etc/yum.repos.d/ublue-os-gnome-software.repo && \
+    rpm-ostree override replace --experimental --from repo=copr:copr.fedorainfracloud.org:ublue-os:gnome-software gnome-software gnome-software-rpm-ostree && \
     pip install --prefix=/usr yafti && \
     curl -sL $(curl -s https://api.github.com/repos/rsms/inter/releases | jq -r '.[0].assets[0].browser_download_url') -o /tmp/inter.zip && \
     mkdir -p /tmp/inter /usr/share/fonts/inter && \
