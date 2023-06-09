@@ -96,7 +96,7 @@ jobs:
           labels: |
             org.opencontainers.image.title=${{ env.IMAGE_NAME }}
             org.opencontainers.image.version=${{ steps.labels.outputs.VERSION }}
-            org.opencontainers.image.description=Fill me out!
+            org.opencontainers.image.description=What a GNOME OS could look like in the future—today
             io.artifacthub.package.readme-url=https://raw.githubusercontent.com/ublue-os/beyond/beyond/README.md
             io.artifacthub.package.logo-url=https://avatars.githubusercontent.com/u/120078124?s=200&v=4
 
