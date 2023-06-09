@@ -39,3 +39,8 @@ transparency-mode='DYNAMIC'
 
 [org/gtk/gtk4/settings/file-chooser]
 sort-directories-first=true
+
+[org/gnome/shell/extensions/panel-corners]
+panel-corners=false
+scren-corner-radius=8
+screen-corners=true
