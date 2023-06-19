@@ -78,6 +78,14 @@ This is **highly experimental** at this stage! Settings and installed apps may c
 sudo rpm-ostree rebase fedora:fedora/38/x86_64/silverblue
 ```
 
+3. Install extra extensions
+
+```shell
+just install-beyond-extensions
+```
+
+Then logout and back in (or reboot). 
+
 ## Verification
 
 These images are signed with sigstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
