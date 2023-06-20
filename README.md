@@ -72,19 +72,23 @@ This is **highly experimental** at this stage! Settings and installed apps may c
         
 2. Restart your computer
 
-### To revert back
+### Install extensions
+
+Beyond comes with some GNOME extensions to tailor the desktop experience. For now, **you must manually install them (https://github.com/ublue-os/beyond/issues/74)**.
+
+1. Open Console and run:
+
+   ```shell
+   just install-beyond-extensions
+   ```
+
+2. Log out and back in (or restart your computer) to ensure the extensions are running
+
+### To revert back to Silverblue
 
 ```shell
 sudo rpm-ostree rebase fedora:fedora/38/x86_64/silverblue
 ```
-
-3. Install extra extensions
-
-```shell
-just install-beyond-extensions
-```
-
-Then logout and back in (or reboot). 
 
 ## Verification
 
