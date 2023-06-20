@@ -82,7 +82,7 @@ Beyond comes with some GNOME extensions to tailor the desktop experience. For no
    just install-beyond-extensions
    ```
 
-2. Log out and back in (or restart your computer) to ensure the extensions are running.
+2. Log out and back in (or restart your computer) to ensure the extensions are running
 
 ### To revert back to Silverblue
 
