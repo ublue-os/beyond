@@ -11,7 +11,7 @@ font-name="Inter 11"
 document-font-name="Inter 11"
 
 [org/gnome/desktop/wm/preferences]
-title-bar-font="Inter 11"
+titlebar-font="Inter 11"
 
 [org/gnome/desktop/peripherals/touchpad]
 tap-to-click=true
