@@ -62,12 +62,12 @@ This is **highly experimental** at this stage! Settings and installed apps may c
 
    <details>
      <summary>AMD/Intel</summary>
-     <pre><code>sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/beyond:38</code></pre>
+     <pre><code>sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/beyond:38</code></pre>
    </details>
 
    <details>
      <summary>NVIDIA</summary>
-     <pre><code>sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/beyond-nvidia:38</code></pre>
+     <pre><code>sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/beyond-nvidia:38</code></pre>
    </details>
         
 2. Restart your computer
