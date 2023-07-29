@@ -1,0 +1,25 @@
+/* Add your custom extension styling here */
+
+.workspaces-strip-indicators {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.workspaces-strip-indicator {
+  padding: 0 2px;
+  height: 16px;
+}
+
+.workspaces-strip-indicator-icon {
+  width: 0px;
+  height: 0px;
+  border-radius: 10px;
+  background-color: none;
+  border: 5px solid white;
+
+}
+
+#panelActivities {
+  -natural-hpadding: 0;
+  -minimum-hpadding: 0;
+}

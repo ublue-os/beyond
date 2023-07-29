@@ -1,0 +1,8 @@
+{
+  "name": "Activities Filled Pill",
+  "description": "CI fixes for the panel",
+  "uuid": "activities-filled-pill@verdre",
+  "shell-version": [
+    "44"
+  ]
+}
