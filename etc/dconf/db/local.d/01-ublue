@@ -1,6 +1,6 @@
 [org/gnome/shell] 
 favorite-apps = ['org.gnome.Nautilus.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Software.desktop']
-enabled-extensions = ['dash-to-dock@micxgx.gmail.com']
+enabled-extensions = ['activities-filled-pill@verdre', 'dash-to-dock@micxgx.gmail.com']
 
 [org/gnome/desktop/background]
 picture-uri='file:///usr/share/backgrounds/gnome/adwaita-l.webp'
