@@ -62,6 +62,20 @@ This is **highly experimental** at this stage! Settings and installed apps may c
 
    <details>
      <summary>AMD/Intel</summary>
+     <pre><code>sudo rpm-ostree rebase ostree-unverified-registry:docker://ghcr.io/ublue-os/beyond:38</code></pre>
+   </details>
+
+   <details>
+     <summary>NVIDIA</summary>
+     <pre><code>sudo rpm-ostree rebase ostree-unverified-registry:docker://ghcr.io/ublue-os/beyond-nvidia:38</code></pre>
+   </details>
+        
+2. Restart your computer
+
+3. Rebase onto a signed image (optional, but recommended), based on which type of GPU you use:
+
+   <details>
+     <summary>AMD/Intel</summary>
      <pre><code>sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/beyond:38</code></pre>
    </details>
 
@@ -70,7 +84,7 @@ This is **highly experimental** at this stage! Settings and installed apps may c
      <pre><code>sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/beyond-nvidia:38</code></pre>
    </details>
         
-2. Restart your computer
+4. Restart your computer (again, yes)
 
 ### Install extensions
 
