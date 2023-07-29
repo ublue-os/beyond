@@ -2,7 +2,7 @@
 
 [![release-please](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml/badge.svg)](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml)
 
-**What a GNOME OS could look like in the future—today**
+**Cassidy’s idea of what a GNOME OS could look like in the future—today**
 
 ![Screenshot of Beyond overview](https://github.com/ublue-os/beyond/assets/611168/93a07df1-ac0a-4dff-b66b-9bebf58716ab) | ![Screenshot of Beyond desktop](https://github.com/ublue-os/beyond/assets/611168/f6ffac8a-6100-4ccc-8795-5b3b770ae6bd)
 ---|---
