@@ -21,9 +21,6 @@ screens:
         - run: /usr/lib/fedora-third-party/fedora-third-party-opt-out
         - run: /usr/bin/fedora-third-party disable
         - run: flatpak remote-delete fedora --force
-        - run: flatpak remove --system --noninteractive --all
-        - run: flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-        - run: flatpak remote-modify --system flathub --no-filter --title="Flathub (System)"
         - run: flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
   applications:
     source: yafti.screen.package
@@ -36,70 +33,6 @@ screens:
           description: GNOME Apps
           default: true
           packages:
-          - Calculator:
-              package: org.gnome.Calculator
-              system: true
-              user: false
-          - Calendar:
-              package: org.gnome.Calendar
-              system: true
-              user: false
-          - Characters:
-              package: org.gnome.Characters
-              system: true
-              user: false
-          - Clocks:
-              package: org.gnome.clocks
-              system: true
-              user: false
-          - Contacts:
-              package: org.gnome.Contacts
-              system: true
-              user: false
-          - Document Viewer:
-              package: org.gnome.Evince
-              system: true
-              user: false
-          - Fonts:
-              package: org.gnome.font-viewer
-              system: true
-              user: false
-          - Loupe:
-              package: org.gnome.Loupe
-              system: true
-              user: false
-          - Maps:
-              package: org.gnome.Maps
-              system: true
-              user: false
-          - Music:
-              package: org.gnome.Music
-              system: true
-              user: false
-          - Nautilus Preview:
-              package: org.gnome.NautilusPreviewer
-              system: true
-              user: false
-          - Snapshot:
-              package: org.gnome.Snapshot
-              system: true
-              user: false
-          - Text Editor:
-              package: org.gnome.TextEditor
-              system: true
-              user: false
-          - Videos:
-              package: org.gnome.Totem
-              system: true
-              user: false
-          - Weather:
-              package: org.gnome.Weather
-              system: true
-              user: false
-          - Web:
-              package: org.gnome.Epiphany
-              system: true
-              user: false
         Utilities:
           description: Potentially useful apps for advanced users
           default: false
