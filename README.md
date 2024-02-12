@@ -93,7 +93,7 @@ Beyond comes with some GNOME extensions to tailor the desktop experience. For no
 1. Open Console and run:
 
    ```shell
-   just install-beyond-extensions
+   ujust install-beyond-extensions
    ```
 
 2. Log out and back in (or restart your computer) to ensure the extensions are running
