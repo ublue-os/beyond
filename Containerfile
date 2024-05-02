@@ -23,6 +23,9 @@ RUN /tmp/build.sh && \
     mkdir -p /tmp/inter /usr/share/fonts/inter && \
     unzip /tmp/inter.zip -d /tmp/inter/ && \
     mv /tmp/inter/*.ttf /tmp/inter/*.ttc /tmp/inter/LICENSE.txt /usr/share/fonts/inter/ && \
+    cat etc/flatpak/install | while read line; do flatpak install --system --noninteractive --no-deploy flathub $line; done && \
+    systemctl unmask flatpak-system-install.service && \
+    systemctl enable flatpak-system-install.service && \
     systemctl unmask dconf-update.service && \
     systemctl enable dconf-update.service && \
     systemctl enable rpm-ostree-countme.service && \
