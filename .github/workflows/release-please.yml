@@ -19,10 +19,10 @@ jobs:
       tag: ${{ steps.release-please.outputs.tag_name }}
       upload_url: ${{ steps.release-please.outputs.upload_url }}
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      - uses: google-github-actions/release-please-action@v4
         id: release-please
         with:
-          release-type: node
+          release-type: simple
           package-name: release-please-action
   build-iso:
     name: Generate and Release ISOs
@@ -35,9 +35,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Generate ISO
-        uses: ublue-os/isogenerator@v2.0.2
+        uses: ublue-os/isogenerator@v2.3.1
         id: isogenerator
         with:
           image-name: beyond

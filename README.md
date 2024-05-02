@@ -2,7 +2,7 @@
 
 [![release-please](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml/badge.svg)](https://github.com/ublue-os/beyond/actions/workflows/release-please.yml)
 
-**Cassidy’s idea of what a GNOME OS could look like in the future—today**
+**Cassidy’s idea of what GNOME could look like in the future—today**
 
 ![Screenshot of Beyond overview](https://github.com/ublue-os/beyond/assets/611168/93a07df1-ac0a-4dff-b66b-9bebf58716ab) | ![Screenshot of Beyond desktop](https://github.com/ublue-os/beyond/assets/611168/f6ffac8a-6100-4ccc-8795-5b3b770ae6bd)
 ---|---
@@ -62,12 +62,12 @@ This is **highly experimental** at this stage! Settings and installed apps may c
 
    <details>
      <summary>AMD/Intel</summary>
-     <pre><code>sudo rpm-ostree rebase ostree-unverified-registry:docker://ghcr.io/ublue-os/beyond:38</code></pre>
+     <pre><code>sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/beyond:38</code></pre>
    </details>
 
    <details>
      <summary>NVIDIA</summary>
-     <pre><code>sudo rpm-ostree rebase ostree-unverified-registry:docker://ghcr.io/ublue-os/beyond-nvidia:38</code></pre>
+     <pre><code>sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/beyond-nvidia:38</code></pre>
    </details>
         
 2. Restart your computer
@@ -93,7 +93,7 @@ Beyond comes with some GNOME extensions to tailor the desktop experience. For no
 1. Open Console and run:
 
    ```shell
-   just install-beyond-extensions
+   ujust install-beyond-extensions
    ```
 
 2. Log out and back in (or restart your computer) to ensure the extensions are running
